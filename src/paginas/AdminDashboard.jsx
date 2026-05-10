@@ -1,4 +1,6 @@
 import Navbar from "../componentes/Navbar"
+import Footer from "../componentes/Footer"
+
 import ParticleBackground from "../componentes/ParticleBackground"
 
 import PaqueteForm from "../componentes/PaqueteForm"
@@ -15,15 +17,16 @@ function AdminDashboard() {
   } = usePackages()
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+
+    <div className="relative min-h-screen overflow-hidden flex flex-col">
 
       <ParticleBackground />
 
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col flex-1">
 
         <Navbar />
 
-        <div className="p-8 space-y-8">
+        <div className="p-8 space-y-8 flex-1">
 
           <h1 className="text-5xl text-center text-green-400 font-bold">
 
@@ -46,6 +49,8 @@ function AdminDashboard() {
           />
 
         </div>
+
+        <Footer />
 
       </div>
 
